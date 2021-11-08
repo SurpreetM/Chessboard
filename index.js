@@ -1,17 +1,16 @@
 let board = ""
 let size = 8 
 
-for (let r = 0; r < size; r += 1) {
+for (let r = 0; r < size; r++) {
    
-    for (let i = 0; i < size; i+=1) {
-        console.log((r+i))
+    for (let i = 0; i < size; i++) {
         if ((r+i)% 2 === 0) { 
-            board = board + " "
+            board += " "
         } else {
-            board = board + "#"
+            board += "#"
         }   
     }
-    board = board + "\n"
+    board += "\n"
 }
 
 console.log(board)
